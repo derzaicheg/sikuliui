@@ -1,21 +1,13 @@
-pipeline {
-    agent any
-
-   stages {
-        stage(‘Build’) {
-            steps {
-                echo ‘Building..’
-            }
-        }
-        stage(‘Test’) {
-            steps {
-                echo ‘Testing..’
-            }
-        }
-        stage(‘Deploy’) {
-            steps {
-                echo ‘Deploying....’
-            }
-        }
+node {
+    def server
+    def buildInfo
+    def rtMaven
+    
+    stage ('Clone') {
+        sh "ls -l"
+    }
+    
+    stage ('Build') {
+        sh "ps -ax"
     }
 }
