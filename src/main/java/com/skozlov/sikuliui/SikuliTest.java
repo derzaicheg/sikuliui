@@ -9,7 +9,7 @@ public class SikuliTest {
 			Screen s = new Screen();
 			try{
 				s.click("/src/main/resources/imgs/chrome.png");
-				s.wait(3.0);
+				s.wait(43.0);
 				s.compare("/src/main/resources/imgs/chrome_ready.png");
 				s.click("/src/main/resources/imgs/search_chrome.png");
 				s.type("http://drmtest2.adobe.com/AccessPlayer/player.swf" + Key.ENTER);
