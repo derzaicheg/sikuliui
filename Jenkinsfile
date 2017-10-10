@@ -8,6 +8,6 @@ node {
     }
     
     stage ('Build') {
-        sh "ps -ax"
+        sh "ps -aux"
     }
 }
